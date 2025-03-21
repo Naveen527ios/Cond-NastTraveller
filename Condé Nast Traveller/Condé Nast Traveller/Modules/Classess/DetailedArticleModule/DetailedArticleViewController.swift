@@ -39,7 +39,7 @@ class DetailedArticleViewController: UIViewController {
         
         publisherLabel.text = "Pusblished   : \(article?.publishedAt?.convertStringIntoDate() ?? "NA")"
         descriptionLabel.text = article?.description ?? "NA"
-        articleImageView.setCornerRadious(radious: 10)
+        articleImageView.setCornerRadious(radious: 15)
         
         if let imagrUrl = article?.urlToImage {
             articleImageView

@@ -41,20 +41,16 @@ final class Conde__Nast_TravellerTests: XCTestCase {
                    },
                    {
                        "title": "Kota",
-                       "description": "Description of Kota"
+                       "description": "Description for Kota"
                    }
                ]
            }
            """.data(using: .utf8)!
            
-           // Mock success response
            mockNetworkManager.mockResponse = .success(mockData)
-           
-           // Act: Call the method
            let expectation = self.expectation(description: "Fetch top articles")
            
            viewModel.getTheTopArticlesBusiness(category: "business") { result in
-               // Assert: Verify the success case
                switch result {
                case .success(let model):
                    XCTAssertNotNil(model)

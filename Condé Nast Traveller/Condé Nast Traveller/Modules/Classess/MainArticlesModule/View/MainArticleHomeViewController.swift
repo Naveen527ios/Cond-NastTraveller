@@ -187,7 +187,7 @@ extension MainArticleHomeViewController:UITableViewDelegate,UITableViewDataSourc
         selectedCategory.uppercased()
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        60
+        50
     }
 
     
